@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+body {
+  height: 100vh;
+  margin: 0;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(216, 227, 240, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: backgroundanim 30s ease infinite;
+  background-size: 600% 600%;
+}
+
+.container {
+  padding: 12px 24px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+h1 {
+  font-family: "Open Sans", Arial, Helvetica Neue, sans-serif;
+  letter-spacing: 3px;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 0.8px;
+}
+
+@keyframes backgroundanim {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
